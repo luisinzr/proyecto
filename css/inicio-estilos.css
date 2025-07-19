@@ -1,0 +1,119 @@
+/* Fondo naranja con imagen */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: orange;
+  background-image: url('../img/restaurante.jpg'); /* Debe existir esta imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Centrado del contenido para index.php */
+.container {
+  background-color: rgba(255, 255, 255, 0.6); /* Más transparente */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  width: 70%;          /* reduce tamaño al 70% (30% menos) */
+  max-width: 700px;    /* opcional: limita el ancho máximo */
+  margin: 5vh auto;
+}
+
+/* Logo animado opcional */
+.logo {
+  width: 150px;
+  animation: flotar 3s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Estilos específicos para registro.php */
+.registro-page .registro-container {
+  background-color: rgba(166, 61, 61, 0.7); /* Fondo rojo translúcido */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  width: 60%;
+  max-width: 600px;
+  margin: 4vh auto;
+}
+/* Fondo exclusivo para login.php */
+body.login-page {
+  background-color: #aa6f73; /* Fondo naranja */
+  background-image: url('../img/fondo-login.jpg'); /* Asegúrate que esta imagen exista */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor del formulario de login */
+.login-container {
+  background-color: rgba(188, 133, 133, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  width: 60%;
+  max-width: 300px;
+  margin: 10vh auto;
+}
+/* === Estilo exclusivo para dashboard.php === */
+body.dashboard-page {
+  background-color: #665200; /* Azul oscuro o el que prefieras */
+  background-image: url('../img/restaurante.jpg'); /* Cambia por una imagen tuya */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+   width: 80%;
+  margin: 1vh;
+  padding: 0;
+}
+a.btn-outline-danger.mt-4 {
+  color: #b22222;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: thistle;
+}
+/* Solo para menu_cliente.php */
+body.menu-cliente-page a.btn-outline-danger.mt-4 {
+  background-color: rgba(153, 13, 13, 0.6); /* Más transparente */
+  font-size: 1.1rem;        /* tamaño un poco más grande */
+  font-weight: 600;         /* semi-negrita */
+  text-transform: uppercase; /* mayúsculas */
+  letter-spacing: 1px;      /* espacio entre letras */
+  transition: color 0.3s ease;
+}
+
+.menu-cliente-page label,
+.menu-cliente-page p,
+.menu-cliente-page span,
+.menu-cliente-page .etiqueta,
+.menu-cliente-page .nombre-comida {
+  background-color: rgba(225, 223, 173, 0.7);  /* Fondo blanco semitransparente */
+  color: #0e0521;  /* Color del texto */
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+body.admin-page {
+    background-color: #b6d75c;
+}
+body.gestor-platos{
+    background-color: #742828; /* o el color exacto */
+    background-image: url('../img/restaurante.jpg'); /* Cambia por una imagen tuya */
+}
+
+
+  
